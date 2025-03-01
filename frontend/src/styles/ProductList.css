@@ -1,0 +1,105 @@
+/* src/components/ProductList.module.css */
+.productGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
+  max-width: 1200px; /* Maksymalna szerokość kontenera, możesz dostosować */
+  margin: 0 auto; /* Centruje kontener na stronie */
+}
+
+.productCard {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-decoration: none;
+  color: inherit;
+  transition: box-shadow 0.3s;
+}
+
+.productCard:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.productName {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.productDescription {
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+.categorySection {
+  margin-bottom: 2rem;
+  width: 100%; /* Kontener zajmuje pełną szerokość */
+  max-width: 1200px; /* Maksymalna szerokość kontenera */
+  margin: 0 auto; /* Centruje kontener na stronie */
+}
+
+.categoryTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.productsInCategory {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.productCard {
+  background-color: #f8f8f8;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  transition: box-shadow 0.3s;
+}
+
+.productCard:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.productGrid {
+  display: flex;
+  justify-content: center; /* Centruje w poziomie */
+  align-items: flex-start; /* Ustawia elementy na górze */
+  gap: 2rem; /* Dodaje odstępy pomiędzy kategoriami */
+  flex-wrap: wrap; /* Pozwala na zawijanie elementów, jeśli jest to konieczne */
+  padding: 2rem; /* Dodaje padding do kontenera */
+  width: 100%; /* Zapewnia pełną szerokość */
+  max-width: 1200px; /* Ustawia maksymalną szerokość */
+  margin: 0 auto; /* Centruje kontener na stronie */
+}
+
+.categorySection {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Wycentrowanie zawartości w poziomie */
+  width: 100%; /* Zapewnia pełną szerokość */
+  max-width: 1200px; /* Ustawia maksymalną szerokość */
+  padding: 1rem;
+  border: 1px solid #ccc; /* Obramowanie dla lepszego wyglądu */
+  border-radius: 8px; /* Zaokrąglone rogi */
+  margin: 0 auto; /* Centruje sekcję na stronie */
+}
+
+.categoryTitle {
+  font-size: 2rem; /* Zwiększenie rozmiaru czcionki */
+  font-weight: bold;
+  text-align: center; /* Centruje tytuł */
+}
+
+.productDescription {
+  white-space: pre-wrap; /* Zawija tekst, aby mieścił się w kontenerze */
+  word-wrap: break-word; /* Umożliwia łamanie słów */
+  max-height: 150px; /* Możesz dostosować wysokość */
+  overflow-y: auto; /* Pozwala na przewijanie w pionie, jeśli tekst jest za długi */
+}

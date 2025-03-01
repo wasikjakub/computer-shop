@@ -1,0 +1,21 @@
+html, body {
+    height: 100%; /* Sprawia, że strona zawsze zajmuje pełną wysokość */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+  }
+  
+  main {
+    flex: 1; /* Sprawia, że treść strony wypełnia przestrzeń między headerem a footerem */
+  }
+  
+  footer {
+    margin-top: auto; /* Umieszcza footer na dole */
+  }
+  

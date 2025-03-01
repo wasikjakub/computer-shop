@@ -1,0 +1,96 @@
+/* Updated styles for set grid */
+.guide {
+    padding: 20px; /* Add padding inside the guide container */
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #cfcdcd;
+    color: #333;
+    font-size: 20px;
+  }
+
+.set-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Maximum 3 columns */
+    gap: 30px; /* Spacing between items */
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .set-image {
+    width: 100%; /* Fit within the container */
+    height: 200px; /* Fixed height for consistency */
+    object-fit: cover; /* Ensures the image is scaled and cropped to fit */
+    border-radius: 8px;
+  }
+  /* Ensure product alignment */
+  .product-card {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 100%; /* Matches container width */
+    max-width: 400px; /* Optional: Limit max size for consistent layout */
+    padding: 10px;
+    text-align: left; /* Align content to the left */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+
+  .set-description {
+    font-size: 14px; /* lub inna preferowana wartość */
+}
+
+  .product-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .product-name {
+    font-size: 1rem;
+    margin: 5px 0;
+    color: #4b3f72;
+    font-weight: bold;
+  }
+  
+  .product-price {
+    font-size: 0.9rem;
+    color: #333;
+    margin-top: 5px;
+  }
+  
+  /* Fix alignment between product name and price */
+  .product-specs {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.9rem;
+    color: #666;
+  }
+
+  .product-link {
+    text-decoration: none;
+    color: inherit; /* Inherits color from parent styles */
+  }
+  
+  .product-link:hover {
+    text-decoration: underline; /* Adds a subtle underline on hover */
+  }
+  
+  .set-header {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .set-header img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+  }
+  
+  .add-set-to-basket-btn {
+    margin-top: 15px;
+    width: 100%;
+  }
+  

@@ -1,0 +1,93 @@
+.about-us {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    padding: 20px;
+  }
+  
+  .about-us-header {
+    text-align: center;
+    background-color: #4b3f72;
+    color: white;
+    padding: 30px 0;
+    border-radius: 8px;
+  }
+  
+  .about-us-header h1 {
+    font-size: 2.5em;
+    margin: 0;
+  }
+  
+  .tagline {
+    font-size: 1.2em;
+    font-weight: 300;
+    margin-top: 10px;
+  }
+  
+  .company-section, .mission-section, .values-section, .location-section {
+    margin-top: 40px;
+  }
+  
+  h2 {
+    font-size: 2em;
+    color: #4b3f72;
+  }
+  
+  p {
+    font-size: 1.1em;
+    line-height: 1.6;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  ul li {
+    margin-bottom: 10px;
+  }
+  
+  .values-section .values {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+  }
+  
+  .values-section .value {
+    background-color: #fff;
+    border: 2px solid #4b3f72;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    border-radius: 8px;
+  }
+  
+  .values-section .value h3 {
+    font-size: 1.5em;
+    color: #4b3f72;
+  }
+  
+  .location-section {
+    background-color: #4b3f72; /* Adjust background color if needed */
+    color: white; /* White text */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for better contrast */
+  }
+  
+  .location-section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .about-us-footer {
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 40px;
+    background-color: #4b3f72;
+    color: white;
+    border-radius: 8px;
+  }
+  

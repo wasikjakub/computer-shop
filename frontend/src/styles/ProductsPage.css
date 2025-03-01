@@ -1,0 +1,56 @@
+.main-products-page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.main-products-page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  color: #333;
+  font-size: 20px;
+}
+
+.main-products-page-content {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  width:60%
+}
+
+.main-filters-sidebar {
+  width: 30%;
+}
+
+.main-products-list {
+  flex: 1;
+}
+
+.main-category-selector {
+  background-color: #745f8d; /* Fioletowe tło */
+  width: 58%; /* Szerokość zgodna z rodzicem */
+  max-width: 1200px; /* Maksymalna szerokość taka jak w komponentach poniżej */
+  margin: 0 auto; /* Wyśrodkowanie */
+  padding: 20px; /* Padding dla lepszej czytelności */
+  border-radius: 8px; /* Zaokrąglenie rogów */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtelny cień */
+  text-align: center;
+}
+
+.main-category-selector h2 {
+  color: #fff; /* Biały tekst na fioletowym tle */
+  margin-bottom: 10px;
+}
+
+.main-category-selector select {
+  width: 30%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+

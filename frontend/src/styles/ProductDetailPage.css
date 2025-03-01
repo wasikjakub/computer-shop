@@ -1,0 +1,110 @@
+/* Kontener główny */
+.main-productDetailContainer {
+  display: flex;
+  max-width: 1200px;
+  margin: 50px auto;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  min-height: fit-content;
+}
+
+/* Sekcja obrazka produktu */
+.main-productImage {
+  float: left;
+  max-width: 45%; /* Reduce width of left section for more space on the right */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+
+.main-productImagePlaceholder {
+  width: 400px;
+  border-radius: 8px;
+}
+
+/* Sekcja szczegółów produktu */
+.main-productDetails {
+  padding: 20px;
+  width: 55%; /* Increase width of right section */
+}
+
+.main-productTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.main-productDetails p {
+  margin: 5px 0;
+  font-size: 1.1rem;
+}
+
+.main-productAttributes ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.main-productAttributes li {
+  margin-bottom: 5px;
+  font-size: 1rem;
+  color: #555;
+}
+
+.main-cartActionsContainer {
+  display: flex;
+  flex-direction: column; /* Ustawienie elementów w kolumnie */
+  align-items: flex-start; /* Wyrównanie elementów do lewej */
+  padding: 20px;
+  width: 300px; /* Zwiększona szerokość kontenera */
+  margin: 20px; /* Większy margines wokół kontenera */
+  }
+
+/* Cena */
+.main-price {
+  font-size: 1.8rem; /* Powiększona czcionka dla ceny */
+  font-weight: bold;
+}
+
+/* Dostępność */
+.main-availability {
+  font-size: 1rem; /* Mniejsza czcionka dla dostępności */
+  color: #666; /* Przygaszony kolor */
+}
+
+/* Ilość */
+.main-quantityInput {
+  width: 40px; /* Szerokość inputa */
+  height: 20px; /* Wysokość inputa */
+  font-size: 1rem;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-left: 130px;
+}
+
+/* Przycisk dodania do koszyka */
+.main-addToCartButton {
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  height: 60px; /* Wysokość inputa */
+}
+
+.main-addToCartButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.main-addToCartButton:hover:not(:disabled) {
+  background-color: #0056b3;
+}

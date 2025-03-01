@@ -1,0 +1,84 @@
+.main-filters {
+  padding: 20px;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.main-filters h2 {
+  border-bottom: 1.5px solid #b3acac;
+  padding: 10px 0;
+  margin-bottom: 40px;
+}
+
+.main-filter-group {
+  margin-bottom: 15px;
+}
+
+.main-filter-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.main-filter-group input,
+.main-filter-group select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.main-filters button {
+  width: 100%;
+  padding: 14px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.main-price-slider {
+  margin-bottom: 15px;
+}
+
+.main-price-slider .main-price-inputs {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-right: 15px;
+}
+
+.main-price-slider .main-price-inputs div {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.main-price-slider .price-inputs input {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.main-filter-group input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+
+

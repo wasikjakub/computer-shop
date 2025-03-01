@@ -1,0 +1,13 @@
+.search-bar input {
+    width: 30%; /* Adjust width to 50% of the container or use a fixed value like 300px */
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px; /* Adds space between search and the grid */
+  }
+
+  .search-bar input:hover {
+    border-color: #007bff; /* Change border color on hover */
+    background-color: #f0f0f0; /* Change background color on hover */
+  }

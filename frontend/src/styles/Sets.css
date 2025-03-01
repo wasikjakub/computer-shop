@@ -1,0 +1,117 @@
+.guide {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f5f5f5;
+  }
+
+  .price-filter-bar {
+    font-size: 1.1rem; /* Slightly larger for better readability */
+    color: #4b3f72; /* Green for a fresh, pleasant look */
+    font-weight: bold;
+    padding: 8px 15px; /* Padding for a nice "button-like" effect */
+    background: linear-gradient(to right, #f0f9ff, #d1e7dd); /* Soft gradient background */
+    border-radius: 25px; /* Rounded corners for a smooth look */
+    display: inline-flex; /* Keeps the price in a more compact space */
+    justify-content: center; /* Centers the content */
+    align-items: center; /* Ensures the text is aligned properly */
+    gap: 10px; /* Adds a small gap between the elements inside */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    max-width: 300px; /* Maximum width to keep it compact */
+    overflow: hidden; /* Prevents any overflow beyond the rounded corners */
+  }
+  
+  .price-filter-bar input {
+    border: 1px solid #ddd; /* Border around the input */
+    border-radius: 8px; /* Rounded corners for the input */
+    padding: 8px 12px; /* Padding for a clean, consistent input field */
+    font-size: 1rem; /* Font size for the input */
+    width: 120px; /* Width to make the input elements more compact */
+  }
+  
+  .price-filter-bar:hover {
+    transform: translateY(-2px); /* Small hover effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slight increase in shadow on hover */
+  }
+  
+  .set-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  .set-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .set-image-container {
+    overflow: hidden;
+  }
+  
+  .set-image {
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .set-info {
+    padding: 15px;
+  }
+  
+  .product-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .product-card {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 1800px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+  }
+  
+  .product-name {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .product-price {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .product-link {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .product-link:hover {
+    text-decoration: underline;
+  }
+  
+  .add-set-to-basket-btn {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .add-set-to-basket-btn:disabled {
+    background-color: #ccc;
+  }
+  

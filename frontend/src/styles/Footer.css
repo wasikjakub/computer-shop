@@ -1,0 +1,56 @@
+/* Footer.css */
+
+/* Footer container */
+.footer {
+    background-color: #3f2b5a; /* Dark purple background */
+    color: white; /* White text */
+    padding: 2rem; /* Padding for spacing */
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Footer links container */
+  .footer-links {
+    display: flex; /* Flex layout */
+    justify-content: space-between; /* Space between columns */
+    margin-bottom: 1.5rem; /* Space above bottom section */
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+  
+  /* Individual footer column */
+  .footer-column {
+    list-style: none; /* Remove bullet points */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+  }
+  
+  .footer-column li {
+    margin-bottom: 0.5rem; /* Space between links */
+  }
+  
+  .footer-column li strong {
+    font-size: 1.1rem; /* Slightly larger font for headings */
+    margin-bottom: 1rem; /* Add space after heading */
+    display: inline-block;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #745f8d;
+    width: 100%;
+  }
+  
+  .footer-column a {
+    color: #b39ddb; /* Light purple text for links */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth hover effect */
+  }
+  
+  .footer-column a:hover {
+    color: #ffffff; /* White on hover */
+  }
+  
+  /* Footer bottom section */
+  .footer-bottom {
+    text-align: center; /* Center align text */
+    font-size: 0.9rem; /* Smaller font size for bottom text */
+    padding-top: 1rem; /* Space above the bottom text */
+  }
+  

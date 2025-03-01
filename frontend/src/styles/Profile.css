@@ -1,0 +1,324 @@
+/* Profile container */
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Center content horizontally */
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    width: 100%; /* Ensure container takes full width without breaking layout */
+}
+
+
+/* Navbar container for tabs */
+.tabs {
+    display: flex;
+    justify-content: center;  /* Center the tabs horizontally */
+    width: 100%; /* Full width */
+    background-color: #f4f4f4; /* Background color for better visibility */
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adding a shadow for depth */
+    position: relative; /* Required for pseudo-element */
+}
+
+/* Individual tab button styles */
+.tab-button {
+    padding: 12px 20px;
+    border: none;
+    background-color: #f4f4f4;  /* Light gray background for default state */
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+    color: #333;  /* Dark text for contrast */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+}
+
+.tab-button:hover {
+    background-color: #ddd;  /* Darker gray for hover effect */
+}
+
+/* Active tab button styles */
+.tab-button.active {
+    background-color: #c5a3d3;  /* Lighter purple for active tab */
+    color: white;  /* White text for active tab */
+    font-weight: bold;
+    border-bottom: 3px solid #7e52a0;  /* Underline for active tab */
+}
+
+/* Tab content styles */
+.tab-content {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    min-height: 200px; /* Adjust this as needed */
+    width: 80%; /* Ensure content area width is responsive */
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.tabs::after {
+    content: "";
+    position: absolute;
+    bottom: -30px; /* Distance of the curve from the navbar */
+    left: 0;
+    width: 100%;
+    height: 10px; /* Increased height for better visibility */
+    /* background: radial-gradient(circle, transparent 0%, #7e52a0 100%, #7e52a0 100%); */
+    background: #a47bb5;
+    border-radius: 50% 50% 0 0; /* Curved effect */
+}
+
+/* profile-info part */
+.profile-info-container {
+    width: 100%; /* Make it responsive */
+    max-width: 800px; /* Optionally set a maximum width */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Add margin to separate from tabs */
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+button.submit-btn {
+    padding: 10px 20px;
+    background-color: #7e52a0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button.submit-btn:hover {
+    background-color: #a47bb5;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+
+/* orders */
+.orders-list {
+    margin-top: 20px;
+}
+
+.order-item {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.order-item p {
+    margin: 5px 0;
+}
+
+
+/* Saved Payments container */
+.saved-payments-container {
+    width: 100%; /* Ensure full width */
+    max-width: 800px; /* Optionally set a max width for uniformity */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.payment-methods-list {
+    margin-top: 20px;
+}
+
+.payment-method-card {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.payment-method-card:hover {
+    background-color: #e0e0e0;
+}
+
+.payment-method-card.default {
+    border-color: #7e52a0;
+    background-color: #e8e8f2;
+}
+
+.default-label {
+    font-weight: bold;
+    color: #7e52a0;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #7e52a0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #a47bb5;
+}
+
+button:focus {
+    outline: none;
+}
+
+.add-payment-method {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.payment-method-card p {
+    margin: 5px 0;
+}
+
+.payment-method-card button {
+    margin-right: 10px;
+}
+
+
+
+/* historia logowania */
+.history-logs-container {
+    width: 100%; /* Ensure full width */
+    max-width: 800px; /* Optionally set max-width for uniformity */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.history-logs-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.history-logs-table th, .history-logs-table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+.history-logs-table th {
+    background-color: #f4f4f4;
+}
+
+.history-logs-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.history-logs-table tr:hover {
+    background-color: #e0e0e0;
+}
+
+.history-logs-table td[colspan="3"] {
+    text-align: center;
+    font-style: italic;
+}
+
+
+/* Preferences container */
+.preferences-container {
+    width: 100%; /* Ensure full width */
+    max-width: 800px; /* Optionally set max width for uniformity */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.preferences-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+}
+
+.preferences-button[type="button"] {
+    padding: 10px 20px;
+    background-color: #7e52a0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.preferences-button[type="button"]:hover {
+    background-color: #a47bb5;
+}

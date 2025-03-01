@@ -1,0 +1,74 @@
+/* General Header Styles */
+.header {
+  background-color: #2b1a42; /* Dark purple background */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  font-family: Arial, sans-serif;
+}
+
+/* Logo Container */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  height: 80px; /* Adjusted height for balance */
+  margin: 0;
+  padding: 0;
+}
+
+.company-name {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+/* Navigation Links */
+.auth-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* Space between links */
+}
+
+/* Link Styles */
+.auth-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+/* Additional Nav Link Style */
+.navlink {
+  font-weight: bold; /* Makes profile and basket stand out */
+  margin: 0 0.5rem;
+}
+
+.auth-links a:hover,
+.navlink:hover {
+  color: #b39ddb; /* Light purple hover effect */
+}
+
+/* Divider Styles */
+.divider {
+  color: white;
+  font-size: 1.2rem;
+  margin: 0 0.5rem; /* Adds space around divider */
+}
+
+/* Logout Link Style */
+.navbar-link {
+  cursor: pointer;
+  font-size: 1rem;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar-link:hover {
+  color: #ffcccb; /* Light red hover effect for logout */
+}
